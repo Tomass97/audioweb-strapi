@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cascos",
+  "info": {
+    "singularName": "casco",
+    "pluralName": "cascos",
+    "displayName": "Cascos",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "richtext"
+    },
+    "precio": {
+      "type": "integer"
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "nombre"
+    }
+  }
+}
